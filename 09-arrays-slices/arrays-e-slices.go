@@ -46,4 +46,17 @@ func main() {
 	slice2 := array2[1:4]
 	fmt.Println("Slice 2:", slice2)
 	fmt.Println("Type of Slice 2:", reflect.TypeOf(slice2))
+
+	// ARRAYS INTERNOS
+	fmt.Println(" -- ARRAYS INTERNOS -- ")
+
+	slice3 := make([]string, 10, 11)
+	fmt.Println("Slice 3:", slice3)
+	fmt.Println("Length of Slice 3:", len(slice3))
+	fmt.Println("Capacity of Slice 3:", cap(slice3))
+
+	slice3 = append(slice3, "a", "b")
+	fmt.Println("Slice 3:", slice3)
+	fmt.Println("Length of Slice 3:", len(slice3))
+	fmt.Println("Capacity of Slice 3:", cap(slice3))
 }
